@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* navigation section */
+nav{
+  width: 100%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: gray;
+  height: auto;
+ 
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: gray;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(252, 175, 33);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    /* border-bottom: 0.1px solid #ccc; */
+  }
+}
+
+/* the header contanier */
+.container-fluid{
+    background:url("/images/pexels-andrea-piacquadio-3756679.jpg");
+    min-height: 790px;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+/* the inside contanier */
+.contanier_p{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 15px;
+    background-color: gray;
+    padding: 25px;
+    position: absolute;
+    height: auto;
+    animation: slideFromRight 5s;
+    font-size: 16px;
+    /* line-height: -20px; */
+}
+@media screen and (max-width:480px){
+    .contanier_p{
+        width: 60%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+@keyframes slideFromRight{
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-200px);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateX(50px);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }}
+
+.first_button{
+        margin-top: 15px;
+        margin-right: 60px;
+        border: 2px dotted #fcaf21 ;
+        color: honeydew;
+        border-radius: 20px;
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        background-color: transparent;
+}
+
+/* what i do */
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section2 div{
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 220px;
+    line-height: 20px;
+    width: 190px;
+    margin: 5px;
+    display: inline-block;
+    background-color: rgb(252, 175, 33);
+    
+   
+   }
+
+   .section2 div i{
+    color: white;
+    /* vertical-align: middle; */
+     width: 100%;
+     display: inline-block;
+     text-align: center;
+    height: 3px;
+    margin-top: 30px;
+}
+   @media only screen and (max-width: 768px){
+   .section2 div{
+    border: 1px solid white;
+    border-radius: 0px!important;
+    height: 220px;
+    line-height: 20px;
+    width: 150%;
+    margin-left: 0px!important;
+    max-width: 100%;
+    display: inline-block;
+    background-color: rgb(252, 175, 33);
+    
+   }}
+  /* body text */
+   /* section3 */
+.my_text p{
+    font-size: 15px;
+    margin-top: 12px;
+    text-align: center;
+    padding: 15px;
+    
+}
+.send_request{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.send_request h6{
+margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 40px;
+    width: 210px;
+    transition: all 1s;
+}
+.send_request a{
+    text-decoration: none;
+    color:rgb(252, 175, 33);
+    padding: 5px;
+    font-size: 13px;
+}
+h6:hover{
+    transform: scale(1.1);
+    border: none;
+}
+
+/* section 4 */
+.second{
+    background:linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("/images/kyle-glenn-TELAb4duebI-unsplash.jpg");
+    min-height: 550px;
+    margin-top: 40px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.second_transition{
+ color: white;
+ text-align: center;
+ padding-left: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+height: auto;
+border-left: 8px solid rgb(252, 175, 33);
+
+}
+@media screen and (max-width:480px){
+  .second_transition{
+  padding-left: 20px;
+}}
+    
+.button_type{
+    background-color: rgb(252, 175, 33);
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 210px;
+    font-size: 18px;
+    color: white;
+    }
+    
+.button_type:hover{
+        
+        cursor: pointer;
+        }
+
+/* section 5 */
+    .section-heading {
+        margin-top: 60px;
+    }
+    .image_contanier{
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 5px; */
+        justify-content: center;
+    }
+    .image_item{
+        background-position: center;
+        background-size: cover;
+        width:290px ;
+        height: 340px;
+        margin: 5px;
+    }
+
+    .item1{
+        background-image: url("/images/pexels-rodnae-productions-7841828.jpg");
+        
+        
+        }
+        .item2{
+            background-image: url("/images/pexels-andrea-piacquadio-3769021.jpg");
+        }
+        .item3{
+            background-image: url("/images/pexels-karolina-grabowska-7680207.jpg");
+        }
+        .item4{
+            background-image: url("/images/pexels-thirdman-5060805 (1).jpg");
+        }
+        
+        .item5{
+        background-image: url("/images/pexels-pavel-danilyuk-7658249 (1).jpg");
+        }
+        
+        .image_item:hover .text_contanier{
+            opacity: 1;
+            
+        } 
+        
+        .text_contanier{
+            height: 100%;
+            width: 100%;
+            background-color: orange;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* display: grid;another way
+            place-items: center!important; */
+            transition: 0.2s ease-in;
+        }
+
+        /* social icons */
+        .social_icons{
+            display: flex;
+            flex-direction: row;
+        }
+        .social_icons .fa {
+            padding: 20px;
+            height: 15px;
+            width: 40px;
+            text-align: center!important;
+            text-decoration: none;
+            margin: 5px 2px;
+          }
+          
+         .social_icons .fa:hover {
+              opacity: 0.7;
+          }
+          
+          .fa-facebook {
+            color: #3B5998;
+            
+          }
+          
+          .fa-twitter {
+            color: #55ACEE;
+            
+          }
+
+          .fa-linkedin {
+            color: #007bb5;
+            
+          }
+          
+        /*section 6  */
+        .third{
+            background:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url("/images/pexels-august-de-richelieu-4427611\ reduced.jpg") ;
+            min-height: 550px!important;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            margin-top: 80px;
+            }
+        
+            .third h2{
+              font-size: 30px;
+              color: rgb(252, 175, 33);
+              text-align: center!important;
+              
+          }
+
+          /* the newsletter part */
+          /* styling the parent contanier */
+          .form_input{
+            padding: 8px 30px;
+            width: 100%;
+          }
+          /* assign full width */
+          input[type=text]
+          {
+            width: 100%;
+            height: 52px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 12px;
+          }
+
+          input[type=checkbox] {
+            margin-top: 16px;
+          }
+          /* styling the form items */
+
+          .form_item1, .form_item2{
+            position: relative;
+          }
+          .form_item2 i{
+            position: absolute;
+            right: 0;
+            margin-top: 10px;
+            top: 0;
+            font-size: 22px;
+            color: rgb(252, 175, 33);
+            margin-right: 20px;
+            cursor: pointer;
+          }
+
+          /* input placeholder */
+          input[type=text]::placeholder{
+            font-size: 15px;
+          }
+          @media screen and (min-width: 900px){
+          .form_input{
+            width: 100%;
+            display: grid;
+            place-items: center;
+          }
+          .form_item1, .form_item2{
+            width: 50%;
+          }}
+
+          
+          
+  
+ .footer-bg{
+   background-color: rgba(0,0,0,.8);
+   margin-top: 60px;
+ }
+footer{
+  padding-top: 60px;
+}
+.fa-facebook,.fa-twitter, .fa-google,.fa-linkedin,.fa-instagram  {
+  color: white;
+  cursor: pointer;
+}
+.media {
+  font-size: 30px;
+  width: 40px;
+  text-decoration: none;
+  }
+.media:hover{
+  opacity: 0.7;
+}
+.row{
+  padding: 20px;
+}
+
+/* move to top button */
+.top_btn{
+  position: fixed;
+  z-index: 2;
+  bottom: 10px;
+  right: 0;
+  background-color: rgb(252, 175, 33);
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.5s ease-in;
+ -webkit-transition-duration: 0.5s;
+ 
+}
+.top_btn i{
+  font-size: 40px;
+  color: white;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+      
+      
+  .top_btn:hover{
+opacity: 0.6;
+transition: 0.5 ease-in;
+  }
+
+
+
+
+
+
+
+/* .move-top{
+  position: fixed;
+  z-index: 2;
+  bottom: 10px;
+  right: 0;
+  
+  margin: 20px;
+}
+.move-top i{
+  font-size: 40px;
+  color: white;
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  background-color: rgb(252, 175, 33);
+} */
